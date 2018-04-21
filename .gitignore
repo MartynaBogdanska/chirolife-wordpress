@@ -1,64 +1,60 @@
 # Exclude WordPress core
-/wordpress/*.log
-/wordpress/.htaccess
-/wordpress/index.php
-/wordpress/license.txt
-/wordpress/readme.html
-/wordpress/wp-activate.php
-/wordpress/wp-admin
-/wordpress/wp-blog-header.php
-/wordpress/wp-comments-post.php
-/wordpress/wp-config-sample.php
-/wordpress/wp-cron.php
-/wordpress/wp-includes
-/wordpress/wp-links-opml.php
-/wordpress/wp-load.php
-/wordpress/wp-login.php
-/wordpress/wp-mail.php
-/wordpress/wp-settings.php
-/wordpress/wp-signup.php
-/wordpress/wp-trackback.php
-/wordpress/xmlrpc.php
+/chirolife-wordpress/*.log
+/chirolife-wordpress/.htaccess
+/chirolife-wordpress/index.php
+/chirolife-wordpress/license.txt
+/chirolife-wordpress/readme.html
+/chirolife-wordpress/wp-activate.php
+/chirolife-wordpress/wp-admin
+/chirolife-wordpress/wp-blog-header.php
+/chirolife-wordpress/wp-comments-post.php
+/chirolife-wordpress/wp-config-sample.php
+/chirolife-wordpress/wp-cron.php
+/chirolife-wordpress/wp-includes
+/chirolife-wordpress/wp-links-opml.php
+/chirolife-wordpress/wp-load.php
+/chirolife-wordpress/wp-login.php
+/chirolife-wordpress/wp-mail.php
+/chirolife-wordpress/wp-settings.php
+/chirolife-wordpress/wp-signup.php
+/chirolife-wordpress/wp-trackback.php
+/chirolife-wordpress/xmlrpc.php
 
 # Exclude wordpress content
-/wordpress/wp-content/uploads/
-/wordpress/wp-content/blogs.dir/
-/wordpress/wp-content/upgrade/*
-/wordpress/wp-content/backup-db/*
-/wordpress/wp-content/advanced-cache.php
-/wordpress/wp-content/cache/*
-/wordpress/wp-content-cache/supercache/*
-/wordpress/wp-content/wflogs/
-/wordpress/wp-content/languages/*
+/chirolife-wordpress/wp-content/uploads/
+/chirolife-wordpress/wp-content/blogs.dir/
+/chirolife-wordpress/wp-content/upgrade/*
+/chirolife-wordpress/wp-content/backup-db/*
+/chirolife-wordpress/wp-content/advanced-cache.php
+/chirolife-wordpress/wp-content/cache/*
+/chirolife-wordpress/wp-content-cache/supercache/*
+/chirolife-wordpress/wp-content/wflogs/
+/chirolife-wordpress/wp-content/languages/*
 
 # Exclude wordpress admin
-/wordpress/wp-admin/*
+/chirolife-wordpress/wp-admin/*
 
 # Exclude WordPress themes
-/wordpress/wp-content/themes/twenty*
-/wordpress/wp-content/uploads
-/wordpress/wp-content/upgrade
-/wordpress/sitemap.*
+/chirolife-wordpress/wp-content/themes/twenty*
+/chirolife-wordpress/wp-content/uploads
+/chirolife-wordpress/wp-content/upgrade
+/chirolife-wordpress/sitemap.*
 
 # Exclude WordPress Understrap theme CSS files
-/wordpress/wp-content/themes/understrap/css/
+/chirolife-wordpress/wp-content/themes/understrap/css/
 
 # Exclude WordPress plugins
-/wordpress/wp-content/plugins/updraftplus
-/wordpress/wp-content/updraft/
-/wordpress/wp-content/plugins/portfolio-pro
-/wordpress/wp-content/plugins/arondale-projects
-/wordpress/wp-snapshots
+/chirolife-wordpress/wp-snapshots
 
 # Exclude files containing sensitive information.
-/wordpress/wp-config.php
-/wordpress/*.sql
+/chirolife-wordpress/wp-config.php
+/chirolife-wordpress/*.sql
 
 # Hidden and data files
-/wordpress/*.DS_Store
-/wordpress/*Thumbs.db
-/wordpress/*.sass-cache*
-/wordpress/*.bak
-/wordpress/*.swp
-/wordpress/node_modules/
-/wordpress/wp-content/themes/understrap/node_modules/
+/chirolife-wordpress/*.DS_Store
+/chirolife-wordpress/*Thumbs.db
+/chirolife-wordpress/*.sass-cache*
+/chirolife-wordpress/*.bak
+/chirolife-wordpress/*.swp
+/chirolife-wordpress/node_modules/
+/chirolife-wordpress/wp-content/themes/understrap/node_modules/

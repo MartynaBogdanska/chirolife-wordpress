@@ -1,0 +1,46 @@
+/*---------------------------------------------------------------------------*\
+    COMPONENTS > NAVIGATION
+\*---------------------------------------------------------------------------*/
+
+
+/**
+Fixed navigation on scroll
+**/
+
+.wrapper-navbar {
+    height: 90px;
+    transition: all .5s ease;
+}
+
+.scrolled {
+    position: fixed;
+    width:100%;
+    box-shadow: 0px 0px 5px $gray-300;
+    top: 0px;
+    transition: all .5s ease;
+    animation: smoothScroll .5s forwards;
+    z-index: 100;
+
+    &.bg-light {
+        opacity: 1;
+        height: 70px;
+        transition: all .5s ease;
+
+        @include media-breakpoint-down(sm) {
+            height: auto;
+        }
+    }
+
+    & a.navbar-brand {
+        max-width: 55px;
+    }
+}
+
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

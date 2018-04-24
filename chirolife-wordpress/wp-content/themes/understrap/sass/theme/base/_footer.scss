@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------------------*\
+    #BASE > #FOOTER
+\*---------------------------------------------------------------------------*/
+
+#wrapper-footer {
+    background-color: $primary;
+    color: $white;
+
+    .row {
+
+        .site-info a {
+            font-size: $font-size-xs;
+            color: $white;
+            margin-right: 10px;
+        }
+
+    }
+
+}

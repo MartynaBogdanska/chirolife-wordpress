@@ -1,0 +1,18 @@
+/*---------------------------------------------------------------------------*\
+    #COMPONENTS > #BUTTONS
+\*---------------------------------------------------------------------------*/
+
+.btn {
+    border-radius: 0px;
+    padding: 7px;
+    min-width: 130px;
+}
+
+.btn-primary {
+    background-color: $primary;
+    border: 2px solid $primary;
+
+    &:hover {
+        background-color: darken($primary, 5%);
+    }
+}

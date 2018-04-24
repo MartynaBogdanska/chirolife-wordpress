@@ -1,0 +1,36 @@
+/*---------------------------------------------------------------------------*\
+    VARIABLES > TYPOGRAPHY
+\*---------------------------------------------------------------------------*/
+
+$font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-heading: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+/**
+ * Based on a modular scale where:
+ * Base = 1rem
+ * Ratio = 1.5
+ */
+
+$font-size-xs: 1rem/1.5*1.5;
+$font-size-s: 1rem/1.5;
+$font-size-m: 1rem;
+$font-size-l: 1rem*1.5*0.4;
+$font-size-xl: 1rem*1.5*0.8;
+$font-size-xxl: 1rem*1.5;
+$font-size-xxxl: 1rem*1.5*1.5;
+
+
+$font-size-h1: $font-size-xxxl;
+$font-size-h2: $font-size-xxl;
+$font-size-h3: $font-size-xl;
+$font-size-h4: $font-size-l;
+$font-size-h5: $font-size-m;
+$font-size-h6: $font-size-s;
+$font-size: $font-size-m;
+
+$line-height-base: 1.5;
+
+$font-weight-light: 200;
+$font-weight: 400;
+$font-weight-bold: 600;

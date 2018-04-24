@@ -12,6 +12,26 @@ Fixed navigation on scroll
     transition: all .5s ease;
 }
 
+.navbar-brand {
+    max-width: 115px;
+}
+
+
+
+.menu-item {
+
+    @include media-breakpoint-up(md) {
+
+        a.nav-link {
+            border-top: 2px solid $white;
+        }
+
+        &.current-menu-item a.nav-link {
+            border-top: 2px solid $primary;
+        }
+    }
+}
+
 .scrolled {
     position: fixed;
     width:100%;
@@ -32,7 +52,7 @@ Fixed navigation on scroll
     }
 
     & a.navbar-brand {
-        max-width: 55px;
+        max-width: 80px;
     }
 }
 

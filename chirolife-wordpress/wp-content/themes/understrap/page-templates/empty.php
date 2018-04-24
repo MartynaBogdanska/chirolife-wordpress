@@ -9,9 +9,15 @@
  */
 
 get_header();
+?>
+<?php if ( is_front_page() ) : ?>
+	<?php get_template_part( 'global-templates/hero', 'none' ); ?>
+<?php endif; ?>
 
+<?php
 while ( have_posts() ) : the_post();
 	get_template_part( 'loop-templates/content', 'empty' );
 endwhile;
 
 get_footer();
+?>

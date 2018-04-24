@@ -16,8 +16,8 @@ get_header();
 $container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php if ( is_front_page() && is_home() ) : ?>
-	<?php get_template_part( 'global-templates/hero' ); ?>
+<?php if ( is_front_page() ) : ?>
+	<?php get_template_part( 'global-templates/hero', 'none' ); ?>
 <?php endif; ?>
 
 <div class="wrapper" id="index-wrapper">
@@ -64,7 +64,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 		<!-- Do the right sidebar check -->
 		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
-		
+
 
 	</div><!-- .row -->
 

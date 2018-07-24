@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-	              		<a>© 2018 ChiroLife</a>
+	              		<a>&copy; <?php echo date("Y"); ?> ChiroLife</a>
 	              		<a href="https://chirolife-bodensee.de/de/impressum/">Impressum</a>
 	              		<a href="https://chirolife-bodensee.de/de/datenschutz/">Datenschutz</a>
 	              		<a href="https://chirolife-bodensee.de/de/site-map/">Sitemap</a>

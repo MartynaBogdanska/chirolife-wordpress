@@ -1,0 +1,19 @@
+/*----------------------------
+BASE > TYPE
+----------------------------*/
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+    margin-bottom: 3rem;
+    font-weight: $font-weight-light;
+}
+h4, h5, h6,
+.h4, .h5, .h6 {
+    margin-bottom: 2rem;
+    font-weight: $font-weight-light;
+}
+
+p {
+ margin-bottom: 1rem;
+ font-weight: $font-weight-light; 
+}

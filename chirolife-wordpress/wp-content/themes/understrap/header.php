@@ -33,11 +33,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-dark bg-primary">
-			<span class="container text-white navbar-text justify-content-end">Ravensburg, 0700 432 234</span>
+		<nav class="navbar navbar-dark bg-primary p-0">
+			<span class="container text-white navbar-text justify-content-end">
+				<i class="fa fa-home pr-1"></i>Ravensburg
+				<i class="fa fa-phone pl-4 pr-1 pt-1"></i>+49 751 95128787
+			</span>
 		</nav>
 
-		<nav id="site-navbar" class="navbar navbar-expand-md navbar-light bg-white">
+		<nav id="site-navbar" class="navbar navbar-expand-sm navbar-light bg-white">
 
 
 			<div class="container" >

@@ -20,7 +20,7 @@ Fixed navigation on scroll
 
 .menu-item {
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
 
         a.nav-link {
             border-top: 2px solid $white;
@@ -62,5 +62,20 @@ Fixed navigation on scroll
     }
     100% {
         transform: translateY(0px);
+    }
+}
+
+
+/**
+/** Main Navigation
+**/
+
+ul#main-menu {
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+        li:nth-last-child(3) {
+            margin-left: auto;
+        }
     }
 }

@@ -9,24 +9,26 @@ $font-family-heading: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 /**
  * Based on a modular scale where:
  * Base = 1rem
- * Ratio = 1.5
+ * Ratio = 0.2
  */
 
-$font-size-xs: 1rem/1.5*1.5;
-$font-size-s: 1rem/1.5;
+$font-size-xs: 1rem/1.4;
+$font-size-s: 1rem/1.2;
 $font-size-m: 1rem;
-$font-size-l: 1rem*1.5*0.4;
-$font-size-xl: 1rem*1.5*0.8;
-$font-size-xxl: 1rem*1.5;
-$font-size-xxxl: 1rem*1.5*1.5;
+$font-size-l: 1rem*1.2;
+$font-size-xl: 1rem*1.4;
+$font-size-xxl: 1rem*1.6;
+$font-size-xxxl: 1rem*1.8;
+$font-size-xxxxl: 1rem*2;
 
 
-$font-size-h1: $font-size-xxxl;
-$font-size-h2: $font-size-xxl;
-$font-size-h3: $font-size-xl;
-$font-size-h4: $font-size-l;
-$font-size-h5: $font-size-m;
-$font-size-h6: $font-size-s;
+$h1-font-size: $font-size-xxxxl;
+$h2-font-size: $font-size-xxxl;
+$h3-font-size: $font-size-xxl;
+$h4-font-size: $font-size-xl;
+$h5-font-size: $font-size-l;
+$h6-font-size: $font-size-m;
+
 $font-size: $font-size-m;
 
 $line-height-base: 1.8;

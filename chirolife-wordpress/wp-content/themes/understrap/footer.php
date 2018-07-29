@@ -13,7 +13,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_sidebar( 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<div class="py-3" id="wrapper-footer">
 
 	<div class="container">
 
@@ -26,10 +26,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="site-info">
 
 	              		<a>&copy; <?php echo date("Y"); ?> ChiroLife</a>
-	              		<a href="https://chirolife-bodensee.de/de/impressum/">Impressum</a>
-	              		<a href="https://chirolife-bodensee.de/de/datenschutz/">Datenschutz</a>
-	              		<a href="https://chirolife-bodensee.de/de/site-map/">Sitemap</a>
-	              		<a href="http://martyna-bogdanska.com">Designed by MB</a>
+	              		<a href="/impressum/">Impressum</a>
+	              		<a href="/datenschutz/">Datenschutz</a>
+	              		<a href="http://martyna-bogdanska.com" target="_blank">Powered by MB</a>
 
 					</div><!-- .site-info -->
 

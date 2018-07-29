@@ -134,7 +134,7 @@ function cookielawinfo_shortcode_accept_button( $atts ) {
 	);
 	$settings = wp_parse_args( cookielawinfo_get_admin_settings(), $defaults );
 
-	return '<a href="#" id="cookie_action_close_header" class="medium cli-plugin-button ' . $colour . '">' . stripslashes( $settings['button_1_text'] ) . '</a>';
+	return '<a href="#"  class="medium cookie_action_close_header cli-plugin-button ' . $colour . '">' . stripslashes( $settings['button_1_text'] ) . '</a>';
 }
 
 /** Returns HTML for a standard (green, medium sized) 'Accept' button */
@@ -166,16 +166,16 @@ function cookielawinfo_shortcode_reject_button( $atts ) {
         
         $classr = '';
         if ( $settings['button_3_as_button'] ) {
-		$classr .= ' class="' . $settings['button_3_button_size'] . ' cli-plugin-button cli-plugin-main-button"';
+		$classr .= ' class="' . cookielawinfo_remove_hash ( $settings['button_3_action'] ) . ' ' . $settings['button_3_button_size'] . ' cli-plugin-button cli-plugin-main-button-reject"';
 	}
 	else {
-		$classr .= ' class="cli-plugin-main-button" ' ;
+		$classr .= ' class="' . cookielawinfo_remove_hash ( $settings['button_3_action'] ) . ' cli-plugin-main-button-reject" ' ;
 	}
             
         $url_reject = ( $settings['button_3_action'] == "cookie_action_open_url_reject" ) ? $settings['button_3_url'] : "#";
         
         $link_tag = '';
-        $link_tag .= '<a href="' . $url_reject . '" id="' . cookielawinfo_remove_hash ( $settings['button_3_action'] ) . '" ';
+        $link_tag .= '<a href="' . $url_reject . '" ';
 	$link_tag .= ( $settings['button_3_new_win'] ) ? 'target="_blank" ' : '' ;
 	$link_tag .= $classr . ' >' . stripslashes( $settings['button_3_text'] ) . '</a>';	
     return $link_tag;
@@ -215,17 +215,17 @@ function cookielawinfo_shortcode_main_button( $atts ) {
 	
 	$class = '';
 	if ( $settings['button_1_as_button'] ) {
-		$class .= ' class="' . $settings['button_1_button_size'] . ' cli-plugin-button cli-plugin-main-button"';
+		$class .= ' class="' . cookielawinfo_remove_hash ( $settings['button_1_action'] ) . ' ' . $settings['button_1_button_size'] . ' cli-plugin-button cli-plugin-main-button"';
 	}
 	else {
-		$class .= ' class="cli-plugin-main-button" ' ;
+		$class .= ' class="' . cookielawinfo_remove_hash ( $settings['button_1_action'] ) . ' cli-plugin-main-button" ' ;
 	}
 	
 	// If is action not URL then don't use URL!
 	$url = ( $settings['button_1_action'] == "CONSTANT_OPEN_URL" ) ? $settings['button_1_url'] : "#";
         
 	
-	$link_tag = '<a href="' . $url . '" id="' . cookielawinfo_remove_hash ( $settings['button_1_action'] ) . '" ';
+	$link_tag = '<a href="' . $url . '" ';
 	$link_tag .= ( $settings['button_1_new_win'] ) ? 'target="_blank" ' : '' ;
 	$link_tag .= $class . ' >' . stripslashes( $settings['button_1_text'] ) . '</a>';
         
@@ -234,16 +234,16 @@ function cookielawinfo_shortcode_main_button( $atts ) {
             
         $classr = '';
         if ( $settings['button_3_as_button'] ) {
-		$classr .= ' class="' . $settings['button_3_button_size'] . ' cli-plugin-button cli-plugin-main-button"';
+		$classr .= ' class="' . cookielawinfo_remove_hash ( $settings['button_3_action'] ) . ' ' . $settings['button_3_button_size'] . ' cli-plugin-button cli-plugin-main-button-reject"';
 	}
 	else {
-		$classr .= ' class="cli-plugin-main-button" ' ;
+		$classr .= ' class="' . cookielawinfo_remove_hash ( $settings['button_3_action'] ) . ' cli-plugin-main-button-reject" ' ;
 	}
             
         $url_reject = ( $settings['button_3_action'] == "cookie_action_open_url_reject" ) ? $settings['button_3_url'] : "#";
         
         
-        $link_tag .= '<a href="' . $url_reject . '" id="' . cookielawinfo_remove_hash ( $settings['button_3_action'] ) . '" ';
+        $link_tag .= '<a href="' . $url_reject . '"';
 	$link_tag .= ( $settings['button_3_new_win'] ) ? 'target="_blank" ' : '' ;
 	$link_tag .= $classr . ' >' . stripslashes( $settings['button_3_text'] ) . '</a>';
         }

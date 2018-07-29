@@ -3,8 +3,8 @@ Contributors: webtoffee,markwt
 Donate link: 
 Tags: eu cookie law, GDPR, cookie law, cookie consent, eu privacy directive, privacy directive, cookies, privacy, compliance
 Requires at least: 3.3.1
-Tested up to: 4.9.6
-Stable tag: 1.5.9
+Tested up to: 4.9.7
+Stable tag: 1.6.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -166,6 +166,18 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Changelog ==
 
+= 1.6.2 =
+
+* Issue with reject button colour fixed.
+
+= 1.6.1 =
+
+* Filter to display cookie bar only on selected pages.
+
+= 1.6.0 =
+
+* Issue with dual accept button.
+
 = 1.5.9 =
 
 * Issue with the plugin interfering with breadcrumb fixed.
@@ -273,8 +285,8 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Upgrade Notice ==
 
-= 1.5.9 =
+= 1.6.2 =
 
-* Issue with the plugin interfering with breadcrumb fixed.
+* Issue with reject button colour fixed.
 
 

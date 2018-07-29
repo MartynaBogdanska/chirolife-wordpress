@@ -5,11 +5,10 @@
  * To learn more and add one to your website, visit - https://superpwa.com
  */
  
-const cacheName = 'localhost-superpwa-1.8.1';
+const cacheName = 'localhost-superpwa-1.9';
 const startPage = 'https://localhost:8080/';
 const offlinePage = 'https://localhost:8080/';
-const fallbackImage = '/wp-content/uploads/2018/04/chirolife-icon-192x192.png';
-const filesToCache = [startPage, offlinePage, fallbackImage];
+const filesToCache = [startPage, offlinePage, '/wp-content/uploads/2018/04/chirolife-praxis.jpg', '/wp-content/uploads/2018/07/team-chiropraktiker.jpg', '/wp-content/uploads/2018/07/testimonials_Marisa_Rohrer-100x100.png', '/wp-content/uploads/2018/07/testimonials_Margareta_Muller-100x100.png', '/wp-content/uploads/2018/07/Verena_Mack_avatar.png', '/wp-content/uploads/2018/07/chiroBerlin-logo.png', '/wp-content/uploads/2018/07/BDC-logo2.png', '/wp-content/uploads/2018/07/Rubicon-logo.png'];
 const neverCacheUrls = [/\/wp-admin/,/\/wp-login/,/preview=true/];
 
 // Install
@@ -18,7 +17,11 @@ self.addEventListener('install', function(e) {
 	e.waitUntil(
 		caches.open(cacheName).then(function(cache) {
 			console.log('SuperPWA service worker caching dependencies');
-			return cache.addAll(filesToCache);
+			filesToCache.map(function(url) {
+				return cache.add(url).catch(function (reason) {
+					return console.log('SuperPWA: ' + String(reason) + ' ' + url);
+				});
+			});
 		})
 	);
 });

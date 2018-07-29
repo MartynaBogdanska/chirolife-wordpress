@@ -1,0 +1,29 @@
+/*---------------------------------------------------------------------------*\
+    #COMPONENTS > #ICONS
+\*---------------------------------------------------------------------------*/
+
+
+// Ultimate Social Media Plugin overrides
+
+.sfsi_widget {
+    display: flex;
+    justify-content: center;
+}
+
+.norm_row.sfsi_wDiv {
+    width: auto !important;
+}
+
+.norm_row .bot_no {
+    color: $white;
+    background: none;
+    border: none;
+
+    &:before {
+        display: none;
+    }
+}
+
+.sfsi_wicons {
+    margin: 0 10px !important;
+}

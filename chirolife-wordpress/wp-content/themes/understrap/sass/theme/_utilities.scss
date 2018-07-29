@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------------------*\
+    #UTILITIES
+\*---------------------------------------------------------------------------*/
+
+.underline {
+    border-bottom: 2px solid $primary;
+}
+
+.font-light {
+    font-weight: $font-weight-light;
+}
+
+.font-normal {
+    font-weight: $font-weight;
+}
+
+.font-bold {
+    font-weight: $font-weight-bold;
+}

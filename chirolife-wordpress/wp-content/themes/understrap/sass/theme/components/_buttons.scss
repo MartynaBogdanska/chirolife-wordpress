@@ -6,11 +6,12 @@
     border-radius: 0px;
     padding: 7px;
     min-width: 130px;
+    font-weight: $font-weight-light;
 }
 
 .btn-primary {
     background-color: $primary;
-    border: 2px solid $primary;
+    border: 1px solid $primary;
 
     &:hover {
         background-color: darken($primary, 5%);

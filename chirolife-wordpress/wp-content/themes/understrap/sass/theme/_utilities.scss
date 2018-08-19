@@ -3,7 +3,8 @@
 \*---------------------------------------------------------------------------*/
 
 .underline {
-    border-bottom: 2px solid $primary;
+    border-bottom: 4px solid $primary;
+    width: fit-content;
 }
 
 .font-light {
@@ -16,4 +17,16 @@
 
 .font-bold {
     font-weight: $font-weight-bold;
+}
+
+.clearfix {
+    clear: both;
+}
+
+img.shadow-hover {
+    transition: .5s;
+
+    &:hover {
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+    }
 }

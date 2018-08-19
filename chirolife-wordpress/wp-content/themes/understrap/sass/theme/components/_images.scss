@@ -4,6 +4,20 @@
 
 // Homepage
 
-#partnership img{
+#partnership img {
 		max-height: 70px;
 	}
+
+// Offer page
+
+#offer {
+
+	.filter-white img {
+		filter: brightness(0) invert(1);
+	}
+
+	img {
+		height: 58px;
+		width: auto;
+	}
+}

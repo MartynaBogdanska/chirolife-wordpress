@@ -2,11 +2,7 @@
 VARIABLES > COLORS
 ----------------------------*/
 
-$primary: #228C95;
-$primary-dark: #1c7079;
-$background-color: #f9f9f9;
-
-$white:    #fff !default;
+$white:    #ffffff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -17,3 +13,9 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
+
+$primary:          #228C95 !default;
+$primary-dark:     #1c7079 !default;
+
+$background-color: $gray-100 !default;
+$light:            $gray-200 !default;

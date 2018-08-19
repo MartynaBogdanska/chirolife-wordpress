@@ -40,11 +40,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</span>
 		</nav>
 
-		<nav id="site-navbar" class="navbar navbar-expand-sm navbar-light bg-white">
+		<nav id="site-navbar" class="navbar navbar-expand-md navbar-light bg-white">
 
 
 			<div class="container" >
 
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
@@ -64,9 +67,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						the_custom_logo();
 					} ?><!-- end custom logo -->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(

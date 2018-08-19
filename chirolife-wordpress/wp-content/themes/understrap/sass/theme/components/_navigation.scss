@@ -2,6 +2,21 @@
     COMPONENTS > NAVIGATION
 \*---------------------------------------------------------------------------*/
 
+.menu-item {
+
+    @include media-breakpoint-up(md) {
+
+        a.nav-link {
+            border-top: 2px solid $white;
+            line-height: 1;
+        }
+
+        &.current-menu-item a.nav-link {
+            border-top: 2px solid $primary;
+        }
+    }
+}
+
 
 /**
 Fixed navigation on scroll
@@ -12,20 +27,6 @@ Fixed navigation on scroll
     transition: all .5s ease;
 }
 
-
-.menu-item {
-
-    @include media-breakpoint-up(md) {
-
-        a.nav-link {
-            border-top: 2px solid $white;
-        }
-
-        &.current-menu-item a.nav-link {
-            border-top: 2px solid $primary;
-        }
-    }
-}
 
 .scrolled {
     position: fixed;
@@ -46,8 +47,12 @@ Fixed navigation on scroll
         }
     }
 
-    & a.navbar-brand {
+    a.navbar-brand {
         max-width: 80px;
+    }
+
+    .navbar-toggler {
+        top: 14px;
     }
 }
 
@@ -71,17 +76,19 @@ Fixed navigation on scroll
     margin: 0 auto;
 
     @include media-breakpoint-up(md) {
-        margin: auto;
+        margin-right: 1rem;
 
     }
 }
 
 .navbar-toggler {
+    position: absolute;
+    top: 20px;
     border: none;
 }
 
 /**
-/** Main Navigation
+Main Navigation
 **/
 
 ul#main-menu {

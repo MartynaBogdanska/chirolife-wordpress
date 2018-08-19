@@ -1,0 +1,72 @@
+/*---------------------------------------------------------------------------*\
+    #COMPONENTS > #POSTS
+\*---------------------------------------------------------------------------*/
+
+
+// Blog page with posts
+
+.blog main {
+
+    .row {
+        padding-bottom: 3rem;
+    }
+
+    .entry-title {
+        margin: 0;
+        font-family: $font-family-serif;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    .entry-meta {
+        padding: 5px 0;
+    }
+
+    @include media-breakpoint-up(sm) {
+
+        .row {
+            margin: 1rem 0 0 1rem;
+            padding-bottom: 2rem;
+        }
+
+        .post {
+            margin-left: 3.5rem;
+            padding-left: 40px;
+            border-left: 1px solid $gray-300;
+        }
+
+        .post-time {
+            font-weight: bolder;
+            color: $gray-600;
+        }
+
+        .entry-meta {
+            width: 85px;
+            margin-top: -25px;
+            margin-left: -115px;
+            text-align: center;
+            background-color: $background-color;
+            padding: 5px 0;
+        }
+
+        .entry-content {
+            margin-top: -2rem;
+        }
+    }
+}
+
+// Post page
+
+.single-post main {
+
+    .entry-title {
+        margin: 0;
+        font-family: $font-family-serif;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    img {
+        margin: 1rem 0;
+    }
+}

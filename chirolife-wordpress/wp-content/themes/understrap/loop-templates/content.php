@@ -9,42 +9,57 @@
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
+	<div class="row">
 
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
-		'</a></h2>' ); ?>
+		<div class="col-md-8">
 
-		<?php if ( 'post' == get_post_type() ) : ?>
+			<header class="entry-header">
 
-			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
-			</div><!-- .entry-meta -->
+				<?php the_title( sprintf( '<h3 class="entry-title mb-2"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
+				'</a></h3>' ); ?>
 
-		<?php endif; ?>
+				<?php if ( 'post' == get_post_type() ) : ?>
 
-	</header><!-- .entry-header -->
+					<div class="entry-meta">
+						<?php understrap_posted_on(); ?>
+					</div><!-- .entry-meta -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+				<?php endif; ?>
 
-	<div class="entry-content">
+			</header><!-- .entry-header -->
 
-		<?php
-		the_excerpt();
-		?>
 
-		<?php
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-			'after'  => '</div>',
-		) );
-		?>
+			<div class="entry-content">
 
-	</div><!-- .entry-content -->
+				<?php
+				the_excerpt();
+				?>
 
-	<footer class="entry-footer">
+				<?php
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+					'after'  => '</div>',
+				) );
+				?>
 
-		<?php understrap_entry_footer(); ?>
+			</div><!-- .entry-content -->
 
-	</footer><!-- .entry-footer -->
+			<footer class="entry-footer mb-2">
+
+				<?php understrap_entry_footer(); ?>
+
+			</footer><!-- .entry-footer -->
+
+		</div>
+
+		<div class="col-md-4">
+
+			<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+
+		</div>
+
+	</div>
+
+
 
 </article><!-- #post-## -->

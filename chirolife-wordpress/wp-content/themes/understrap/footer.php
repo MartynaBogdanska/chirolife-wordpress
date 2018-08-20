@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	              		<a>&copy; <?php echo date("Y"); ?> ChiroLife</a>
 	              		<a href="/impressum/">Impressum</a>
 	              		<a href="/datenschutz/">Datenschutz</a>
-	              		<a href="http://martyna-bogdanska.com" target="_blank">Powered by MB</a>
+	              		<a href="http://martyna-bogdanska.com" target="_blank" rel="noopener">Designed by MB</a>
 
 					</div><!-- .site-info -->
 

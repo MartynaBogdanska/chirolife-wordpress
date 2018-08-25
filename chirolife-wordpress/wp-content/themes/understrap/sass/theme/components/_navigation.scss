@@ -2,6 +2,10 @@
     COMPONENTS > NAVIGATION
 \*---------------------------------------------------------------------------*/
 
+.navbar {
+    z-index: 100;
+}
+
 .menu-item {
 
     @include media-breakpoint-up(md) {
@@ -22,11 +26,10 @@
 Fixed navigation on scroll
 **/
 
-.wrapper-navbar {
-    height: 90px;
+#wrapper-navbar {
+    height: 120px;
     transition: all .5s ease;
 }
-
 
 .scrolled {
     position: fixed;

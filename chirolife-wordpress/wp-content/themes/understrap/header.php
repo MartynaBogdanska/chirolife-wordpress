@@ -41,7 +41,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</span>
 		</nav>
 
-		<nav id="site-navbar" class="navbar navbar-expand-md navbar-light bg-white">
+		<nav id="site-navbar" class="navbar navbar-expand-lg navbar-light bg-white">
 
 
 			<div class="container" >

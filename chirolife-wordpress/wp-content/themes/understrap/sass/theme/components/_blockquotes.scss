@@ -1,0 +1,26 @@
+/*---------------------------------------------------------------------------*\
+    #COMPONENTS > #BLOCKQUOTES
+\*---------------------------------------------------------------------------*/
+
+//
+// Contact page
+//
+
+#contactQuote{
+	position: absolute;
+	top: -105px;
+	right: 0;
+	left: 50%;
+	height: 80px;
+	padding: 12px 0 12px 30px;
+    border-radius: 50px 0 0 50px;
+
+    img{
+    	margin-top: -35px;
+        margin-left: 25px;
+	}
+}
+
+#contact {
+	position:relative;
+}

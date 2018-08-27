@@ -8,7 +8,7 @@
 
 .menu-item {
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
 
         a.nav-link {
             border-top: 2px solid $white;
@@ -45,7 +45,7 @@ Fixed navigation on scroll
         height: 70px;
         transition: all .5s ease;
 
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
             height: auto;
         }
     }
@@ -78,7 +78,7 @@ Fixed navigation on scroll
     width: 115px;
     margin: 0 auto;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         margin-right: 1rem;
 
     }
@@ -98,7 +98,7 @@ Main Navigation
 ul#main-menu {
     width: 100%;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         li:nth-last-child(3) {
             margin-left: auto;
         }

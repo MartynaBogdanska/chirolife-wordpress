@@ -3966,7 +3966,7 @@ jQuery(function() {
     /* Selecting the navigation */
     var $nav = jQuery("#site-navbar");
     /* Determing navigation Size */
-    var $navSize =$nav.outerHeight();
+    var $navSize = 200;
     /* Detecting scroll event */
     jQuery(window).scroll(function() {
     /* Determing the position of the scroll */

@@ -149,7 +149,7 @@ function cookielawinfo_print_admin_page() {
                 <dl class="accordion">
 
 
-                    <dt class="ui-icon ui-icon-triangle-1-s"><a href="#"><?php echo __('Settings','cookie-law-info'); ?></a></dt>
+                    <dt><a href="#"><?php echo __('Settings','cookie-law-info'); ?></a></dt>
                     <dd id="accordion_default">
                         <h4><?php echo __('The Cookie Bar','cookie-law-info'); ?></h4>
                         <table class="form-table">
@@ -171,7 +171,7 @@ function cookielawinfo_print_admin_page() {
                                 </td>
                             </tr>
                             <tr valign="top">
-                                <th scope="row"><label for="notify_position_vertical_field"><?php echo __('Cookie Bar will be show in:','cookie-law-info'); ?></label></th>
+                                <th scope="row"><label for="notify_position_vertical_field"><?php echo __('Cookie Bar will be shown in:','cookie-law-info'); ?></label></th>
                                 <td>
                                     <select name="notify_position_vertical_field" class="vvv_combobox">
     <?php
@@ -249,7 +249,7 @@ function cookielawinfo_print_admin_page() {
 
                             <!-- SHOW ONCE / TIMER -->
                             <tr valign="top" class="hr-top">
-                                <th scope="row"><label for="show_once_yn_field"><?php echo __('Auto-hide cookie bar after delay?','cookie-law-info'); ?></label></th>
+                                <th scope="row"><label for="show_once_yn_field"><?php echo __('Auto-hide cookie bar after delay? (Accept after delay)','cookie-law-info'); ?></label></th>
                                 <td>
                                     <input type="radio" id="show_once_yn_yes" name="show_once_yn_field" class="styled" value="true" <?php echo ( $the_options['show_once_yn'] == true ) ? ' checked="checked" />' : ' />'; ?> Yes
                                            <input type="radio" id="show_once_yn_no" name="show_once_yn_field" class="styled" value="false" <?php echo ( $the_options['show_once_yn'] == false ) ? ' checked="checked" />' : ' />'; ?> No
@@ -265,7 +265,7 @@ function cookielawinfo_print_admin_page() {
 
                             <!-- NEW: CLOSE ON SCROLL -->
                             <tr valign="top" class="hr-top">
-                                <th scope="row"><label for="scroll_close_field"><?php echo __('Auto-hide cookie bar if the user scrolls?','cookie-law-info'); ?></label></th>
+                                <th scope="row"><label for="scroll_close_field"><?php echo __('Auto-hide cookie bar if user scrolls? (Accept on Scroll)','cookie-law-info'); ?></label></th>
                                 <td>
                                     <input type="radio" id="scroll_close_yes" name="scroll_close_field" class="styled" value="true" <?php echo ( $the_options['scroll_close'] == true ) ? ' checked="checked" />' : ' />'; ?> Yes
                                            <input type="radio" id="scroll_close_no" name="scroll_close_field" class="styled" value="false" <?php echo ( $the_options['scroll_close'] == false ) ? ' checked="checked" />' : ' />'; ?> No
@@ -431,7 +431,7 @@ function cookielawinfo_print_admin_page() {
                                 <th scope="row"><label for="button_1_url_field"><?php echo __('Link URL','cookie-law-info'); ?></label></th>
                                 <td>
                                     <input type="text" name="button_1_url_field" id="button_1_url_field" value="<?php echo $the_options['button_1_url'] ?>" />
-                                    <span class="cli-plugin-example"><em><?php echo __('Button will only link to URL if','cookie-law-info'); ?> Action = Show URL</em></span>
+                                    <span class="cli-plugin-example"><em><?php echo __('Button will only link to URL if','cookie-law-info'); ?> Action = Open URL</em></span>
                                 </td>
                             </tr>
 
@@ -502,7 +502,7 @@ function cookielawinfo_print_admin_page() {
                                 <th scope="row"><label for="button_3_url_field"><?php echo __('Link URL','cookie-law-info'); ?></label></th>
                                 <td>
                                     <input type="text" name="button_3_url_field" id="button_3_url_field" value="<?php echo $the_options['button_3_url'] ?>" />
-                                    <span class="cli-plugin-example"><em><?php echo __('Button will only link to URL if ','cookie-law-info');?> Action = Show URL</em></span>
+                                    <span class="cli-plugin-example"><em><?php echo __('Button will only link to URL if ','cookie-law-info');?> Action = Open URL</em></span>
                                 </td>
                             </tr>
 
@@ -613,7 +613,8 @@ function cookielawinfo_print_admin_page() {
                         <p>The shortcodes are:</p>
 
                         <pre>[cookie_accept]</pre><span><?php echo __('If you just want a standard green','cookie-law-info'); ?> "Accept" <?php echo __("button that closes the header and nothing more, use this shortcode. It is already styled, you don't need to customise it.","cookie-law-info"); ?></span>
-
+                        <pre>[cookie_reject]</pre><span><?php echo __('Adds the Reject button you can customize above.','cookie-law-info'); ?></span>
+                        
                         <pre>[cookie_accept colour="red"]</pre><span><?php echo __('Alternatively you can add a colour value. Choose from: red, blue, orange, yellow, green or pink.','cookie-law-info'); ?><br /><em><?php echo __('Careful to use the British spelling of ','cookie-law-info'); ?>"colour" <?php echo __('for the attribute.','cookie-law-info'); ?></em></span>
 
                         <pre>[cookie_button]</pre><span><?php echo __('This is the','cookie-law-info'); ?> "main button" <?php echo __('you customise above.','cookie-law-info'); ?></span>
@@ -624,9 +625,13 @@ function cookielawinfo_print_admin_page() {
                         <p><?php echo __('These shortcodes can be used in pages and posts on your website. It is not recommended to use these inside the cookie bar itself.','cookie-law-info'); ?></p>
 
                         <pre>[cookie_audit]</pre><span><?php echo __('This prints out a nice table of cookies, in line with the guidance given by the ICO.','cookie-law-info'); ?> <em><?php echo __('You need to enter the cookies your website uses via the Cookie Law Info menu in your WordPress dashboard.','cookie-law-info'); ?></em></span>
-
+                        <pre>[cookie_audit style="winter"]</pre>
+                        <pre>[cookie_audit not_shown_message”No records found”]</pre>
+                        <pre>[cookie_audit style="winter" not_shown_message="No records found"]</pre>
+                        <p>Available styles: simple, classic, modern, rounded, elegant, and winter. By default, the style of the table is classic.</p>
                         <pre>[delete_cookies]</pre><span><?php echo __('This shortcode will display a normal HTML link which when clicked, will delete the cookie set by Cookie Law Info (this cookie is used to remember that the cookie bar is closed).','cookie-law-info'); ?></span>
                         <pre>[delete_cookies text="Click here to delete"]</pre><span><?php echo __('Add any text you like- useful if you want e.g. another language to English.','cookie-law-info'); ?></span>
+                        
 
 
                     </dd>
@@ -888,7 +893,7 @@ function cookielawinfo_print_thirdparty_page() {
     echo apply_filters('format_to_edit', stripslashes($stored_options['thirdparty_head_section'])) . '</textarea>';
     ?>
                     <div class="clearfix"></div>
-                    <span class="cli-plugin-example"><em><?php echo __('Print scripts in the head tag on the front end if above cookie settings is enabled and user has given consent.','cookie-law-info'); ?> eg:- &lt;script&gt;console.log("header script");&lt;/script&gt ?></em></span>
+                    <span class="cli-plugin-example"><em><?php echo __('Print scripts in the head tag on the front end if above cookie settings is enabled and user has given consent.','cookie-law-info'); ?> eg:- &lt;script&gt;console.log("header script");&lt;/script&gt </em></span>
                 </td>
             </tr>
             <tr valign="top">

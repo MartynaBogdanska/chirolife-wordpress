@@ -92,7 +92,9 @@ function cookielawinfo_table_shortcode( $atts ) {
 	$ret .= '</th>';
 	$ret .= '<th class="cookielawinfo-column-4">';
 	$ret .= __('Description','cookie-law-info');
-	$ret .= '</th></tr>';
+	$ret .= '</th>';
+	$ret = apply_filters('cli_new_columns_to_audit_table',$ret,'');
+	$ret .= '</tr>';
 	$ret .= '</thead><tbody>';
 	
 	if ( !$posts ) {
@@ -286,7 +288,7 @@ function cookielawinfo_shortcode_button_DRY_code( $name ) {
 		);
 		$class_name = 'cli-plugin-main-link';
 	}
-	
+	$settings = apply_filters('wt_readmore_link_settings', $settings);
 	$class = '';
 	if ( $settings['button_x_as_button'] ) {
 		$class .= ' class="' . $settings['button_x_button_size'] . ' cli-plugin-button ' . $class_name . '"';

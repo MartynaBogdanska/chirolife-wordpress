@@ -2,9 +2,8 @@
     #COMPONENTS > #IMAGES
 \*---------------------------------------------------------------------------*/
 
-img {
+img.lazyloaded, .lazyloaded {
 	transition: opacity 1s;
-    opacity: 1;
 }
 
 // Homepage

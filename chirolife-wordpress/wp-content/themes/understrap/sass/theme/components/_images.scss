@@ -2,7 +2,18 @@
     #COMPONENTS > #IMAGES
 \*---------------------------------------------------------------------------*/
 
+img {
+	transition: opacity 1s;
+    opacity: 1;
+}
+
 // Homepage
+
+#carouselExampleControls .carousel-item img {
+	width: 100%;
+}
+
+// Footer
 
 #partnership img {
 		max-height: 70px;

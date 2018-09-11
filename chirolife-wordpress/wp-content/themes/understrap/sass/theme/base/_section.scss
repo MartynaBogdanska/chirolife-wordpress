@@ -3,5 +3,7 @@
 \*---------------------------------------------------------------------------*/
 
 section {
-    background-position: center;
+    @include media-breakpoint-up(lg) {
+        background-position: center;
+    }
 }

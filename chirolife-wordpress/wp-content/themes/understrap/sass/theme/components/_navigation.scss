@@ -13,10 +13,10 @@
         a.nav-link {
             border-top: 2px solid $white;
             line-height: 1;
-            color: $gray-800;
+            color: $gray-800 !important;
 
             &:hover {
-                color: $gray-600;
+                color: $gray-600 !important;
             }
         }
 

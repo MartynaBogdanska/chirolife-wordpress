@@ -32,7 +32,7 @@ img.shadow-hover {
 }
 
 .py-xl-10 {
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         padding-top: 8rem !important;
         padding-bottom: 8rem !important;
     }

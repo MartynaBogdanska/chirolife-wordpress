@@ -30,3 +30,10 @@ img.shadow-hover {
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
     }
 }
+
+.py-lg-10 {
+    @include media-breakpoint-up(lg) {
+        padding-top: 8rem !important;
+        padding-bottom: 8rem !important;
+    }
+}

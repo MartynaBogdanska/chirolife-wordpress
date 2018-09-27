@@ -31,9 +31,19 @@ img.shadow-hover {
     }
 }
 
+// .py-xl-10 {
+//     @media (min-width: 1600px) {
+//         padding-top: 8rem !important;
+//         padding-bottom: 8rem !important;
+//     }
+// }
+
 .py-xl-10 {
-    @media (min-width: 1600px) {
-        padding-top: 8rem !important;
-        padding-bottom: 8rem !important;
-    }
+    padding-top: 3vw !important;
+    padding-bottom: 3vw !important;
+}
+
+.py-responsive-3 {
+    padding-top: 3vw !important;
+    padding-bottom: 3vw !important;
 }

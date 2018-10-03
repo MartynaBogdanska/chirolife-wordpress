@@ -3,8 +3,8 @@ Contributors: mmaunder
 Tags: security, firewall, malware scanner, web application firewall, antivirus, block hackers, country blocking, clean hacked site, blacklist, waf, login security
 Requires at least: 3.9
 Requires PHP: 5.2
-Tested up to: 4.9.7
-Stable tag: 7.1.9
+Tested up to: 4.9.8
+Stable tag: 7.1.11
 
 Secure your website with the most comprehensive WordPress security plugin. Firewall, malware scan, blocking, live traffic, login security & more.
 
@@ -171,6 +171,25 @@ Secure your website with Wordfence.
 
 
 == Changelog ==
+
+= 7.1.11 =
+* Improvement: Added a custom message field that will show on all block pages.
+* Improvement: Improved the standard appearance for block pages.
+* Improvement: Live Traffic now better displays failed logins.
+* Improvement: Added a constant to prevent direct MySQLi use for hosts with unsupported DB configurations.
+* Improvement: Malware scan results have been modified to include both a public identifier and description.
+* Change: Description updated on the Live Traffic page.
+* Fix: Removed an empty file hash from the old Wordpress core file detection.
+* Fix: Update locking now works on multisites that have removed the original site.
+
+= 7.1.10 =
+* Improvement: Better labeling in Live Traffic for 301 and 302 redirects.
+* Improvement: Login timestamps are now displayed in the site's configured time zone rather than UTC.
+* Improvement: Added detection and a workaround for hosts with a non-functional MySQLi interface.
+* Improvement: The prevent admin registration setting now works with WooCommerce's registration flow.
+* Improvement: For hosts with varying URL values (e.g., AWS instances), notification and alert links now correctly use the canonical admin URL.
+* Fix: Fixed a layout problem with the live traffic disabled notice.
+* Fix: The scan stage that checks "How does Wordfence get IPs?" no longer shows a warning if the call fails.
 
 = 7.1.9 =
 * Improvement: Added an "unsubscribe" link to plugin-generated alerts.

@@ -132,7 +132,7 @@ function cookielawinfo_inject_cli_script() {
 */
 function cookielawinfo_enqueue_frontend_scripts() {
 	$the_options = cookielawinfo_get_admin_settings();
-        $version = '1.6.2';
+        $version = '1.6.5';
 	if ( $the_options['is_on'] == true ) {
 
 		/**
@@ -344,8 +344,10 @@ function include_admin_hdrscript_addedin_cookielawinfo(){
     {
        
        if(!empty($third_party_cookie_options)){
-           if($third_party_cookie_options['thirdparty_on_field'] == 'true' && $_COOKIE['viewed_cookie_policy'] == 'yes'){
+           if($third_party_cookie_options['thirdparty_on_field'] == 'true' && isset($_COOKIE['viewed_cookie_policy'])){
+               if($_COOKIE['viewed_cookie_policy'] == 'yes'){                   
                echo $third_party_cookie_options['thirdparty_head_section'];
+               }
            }
            
        }
@@ -361,8 +363,10 @@ function include_admin_bodyscript_addedin_cookielawinfo(){
    if(!is_admin())
    {
        if(!empty($third_party_cookie_options)){
-           if($third_party_cookie_options['thirdparty_on_field'] == 'true' && $_COOKIE['viewed_cookie_policy'] == 'yes'){
+           if($third_party_cookie_options['thirdparty_on_field'] == 'true' && isset($_COOKIE['viewed_cookie_policy'])){
+               if($_COOKIE['viewed_cookie_policy'] == 'yes'){                   
                echo $third_party_cookie_options['thirdparty_body_section'];
+               }
            }
            
        }

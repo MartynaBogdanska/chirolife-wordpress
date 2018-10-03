@@ -2,7 +2,17 @@
     #COMPONENTS > #IMAGES
 \*---------------------------------------------------------------------------*/
 
+img.lazyloaded, .lazyloaded {
+	transition: opacity 1s;
+}
+
 // Homepage
+
+#carouselExampleControls .carousel-item img {
+	width: 100%;
+}
+
+// Footer
 
 #partnership img {
 		max-height: 70px;

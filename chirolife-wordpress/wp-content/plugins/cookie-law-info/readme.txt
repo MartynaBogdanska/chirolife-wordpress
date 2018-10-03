@@ -1,12 +1,12 @@
 === GDPR Cookie Consent ===
 Contributors: webtoffee,markwt
-Donate link: 
+Donate link: https://www.webtoffee.com/plugins/ 
 Tags: eu cookie law, GDPR, cookie law, cookie consent, eu privacy directive, privacy directive, cookies, privacy, compliance
 Requires at least: 3.3.1
-Tested up to: 4.9.7
-Stable tag: 1.6.2
-License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tested up to: 4.9.8
+Stable tag: 1.6.5
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 A simple way to get GDPR Cookie Consent as per EU GDPR/Cookie Law regulations. Style it to match your own website.
 
@@ -166,6 +166,21 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Changelog ==
 
+= 1.6.5 =
+
+* Filter added. (filter to edit audit table head)
+
+= 1.6.4 =
+
+* Class change.
+* Bug fix.
+
+= 1.6.3 =
+
+* Styling issues with winter style of cookie audit table shortcode fixed.
+* Functionality issues with reject button on open URL fixed.
+* Text corrections
+
 = 1.6.2 =
 
 * Issue with reject button colour fixed.
@@ -285,8 +300,7 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Upgrade Notice ==
 
-= 1.6.2 =
+= 1.6.5 =
 
-* Issue with reject button colour fixed.
-
+* Filter added. (filter to edit audit table head)
 

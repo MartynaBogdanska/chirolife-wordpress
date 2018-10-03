@@ -5,7 +5,7 @@ Plugin URI: http://ultimatelysocial.com
 Description: Easy to use and 100% FREE social media plugin which adds social media icons to your website with tons of customization features!. 
 Author: UltimatelySocial
 Author URI: http://ultimatelysocial.com
-Version: 2.0.3
+Version: 2.0.4
 License: GPLv2 or later
 */
 
@@ -57,7 +57,7 @@ register_activation_hook(__FILE__, 'sfsi_activate_plugin' );
 register_deactivation_hook(__FILE__, 'sfsi_deactivate_plugin');
 register_uninstall_hook(__FILE__, 'sfsi_Unistall_plugin');
 
-if(!get_option('sfsi_pluginVersion') || get_option('sfsi_pluginVersion') < 2.03)
+if(!get_option('sfsi_pluginVersion') || get_option('sfsi_pluginVersion') < 2.04)
 {
 	add_action("init", "sfsi_update_plugin");
 }

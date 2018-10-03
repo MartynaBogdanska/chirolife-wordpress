@@ -1,5 +1,5 @@
 function cli_show_cookiebar(p) {
-	/* plugin version 1.6.2 */
+	/* plugin version 1.6.5 */
 	var Cookie = {
 		set: function(name,value,days) {
 			if (days) {
@@ -209,7 +209,9 @@ function cli_show_cookiebar(p) {
 		e.preventDefault();
 		accept_close();
 	});
-        
+        jQuery(".cookie_action_open_url_reject ").click(function(e) {
+		reject_close();
+	});
         jQuery(".cookie_action_close_header_reject").click(function(e) {
 		e.preventDefault();
 		reject_close();

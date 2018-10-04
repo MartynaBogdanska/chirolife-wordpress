@@ -39,3 +39,28 @@
 .sfsi_wicons {
     margin: 0 10px !important;
 }
+
+// Ultimate Social Media Premium Plugin overrides
+
+.sfsi_plus_widget {
+    display: flex;
+    justify-content: center;
+}
+
+.sfsiplus_norm_row.sfsi_plus_wDiv {
+    width: auto !important;
+}
+
+.sfsiplus_norm_row .bot_no {
+    color: $white;
+    background: none;
+    border: none;
+
+    &:before {
+        display: none;
+    }
+}
+
+.sfsi_plus_wicons {
+    margin: 0 10px !important;
+}

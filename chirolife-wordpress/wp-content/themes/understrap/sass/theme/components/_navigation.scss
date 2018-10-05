@@ -40,7 +40,7 @@ Fixed navigation on scroll
     position: fixed;
     width:100%;
     box-shadow: 0px 0px 5px $gray-300;
-    top: 0px;
+    top: -1px;
     transition: all .5s ease;
     animation: smoothScroll .5s forwards;
     z-index: 100;
